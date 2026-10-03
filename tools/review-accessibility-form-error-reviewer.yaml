@@ -1,0 +1,54 @@
+{
+  "name": "review-accessibility-form-error-reviewer",
+  "description": "Run Accessibility Form Error Reviewer",
+  "version": "0.1.0",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "payload": {
+        "type": "object",
+        "properties": {
+          "form_fields": {
+            "type": "array",
+            "description": "form fields"
+          },
+          "error_associations": {
+            "type": "array",
+            "description": "error associations"
+          },
+          "keyboard_test_evidence": {
+            "type": "string",
+            "description": "keyboard test evidence"
+          }
+        },
+        "required": [
+          "form_fields",
+          "error_associations",
+          "keyboard_test_evidence"
+        ]
+      }
+    },
+    "required": [
+      "payload"
+    ]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "status": {
+        "type": "string"
+      },
+      "score": {
+        "type": "object"
+      },
+      "findings": {
+        "type": "array"
+      }
+    }
+  },
+  "implementation": {
+    "type": "script",
+    "path": "review-accessibility-form-error-reviewer.py",
+    "runtime": "python3"
+  }
+}

@@ -1,0 +1,11 @@
+spec_version: "0.1.0"
+name: accessibility-form-error-reviewer
+version: 0.1.0
+description: Review form errors for field association, recovery guidance, and keyboard reachability.
+skills:
+  - accessibility-form-error-reviewer-skill
+tools:
+  - review-accessibility-form-error-reviewer
+tags:
+  - accessibility
+  - evidence-driven

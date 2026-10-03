@@ -1,0 +1,24 @@
+{
+  "slug": "accessibility-form-error-reviewer",
+  "title": "Accessibility Form Error Reviewer",
+  "category": "accessibility",
+  "description": "Review form errors for field association, recovery guidance, and keyboard reachability.",
+  "fields": {
+    "form_fields": {
+      "label": "form fields",
+      "kind": "list",
+      "minimum": 1
+    },
+    "error_associations": {
+      "label": "error associations",
+      "kind": "list",
+      "minimum": 1
+    },
+    "keyboard_test_evidence": {
+      "label": "keyboard test evidence",
+      "kind": "required",
+      "minimum": 0
+    }
+  },
+  "limitations": "Uses caller-provided evidence only; cannot confirm external facts. Human review remains required."
+}
